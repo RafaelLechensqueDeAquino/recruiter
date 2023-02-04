@@ -33,7 +33,7 @@ abstract class _FocusStore with Store{
   }
 
   @computed
-  bool get formOk =>(goal.isNotEmpty && task.isNotEmpty);
+  bool get formOk =>(goal.isNotEmpty && task.isNotEmpty );
 
 restForm(){
   updategoal('');

@@ -60,7 +60,7 @@ class _CardCustomState extends State<CardCustom> {
                               return SizedBox(
                                 width: 230,
                                 child: Text(
-                                  "saaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                                  widget.task,
                                   style: TextStyles.titleButton,
                                   softWrap: true,
                                   maxLines: 2,

@@ -17,8 +17,8 @@ class ModalAddfocus extends StatelessWidget {
     // ignore: no_leading_underscores_for_local_identifiers
     _onPressed() {
       focusStore.saveFocus();
-      Navigator.of(context, rootNavigator: true).pop('dialog');
-      focusStore.restForm();
+      // Navigator.of(context, rootNavigator: true).pop('dialog');
+      // focusStore.restForm();
     }
 
     return AlertDialog(
@@ -42,7 +42,7 @@ class ModalAddfocus extends StatelessWidget {
         ),
         Observer(builder: (context) {
           return ElevatedButton(
-            onPressed: (!focusStore.formOk ? null : _onPressed()),
+            onPressed:()=>  _onPressed(),
             style: ElevatedButton.styleFrom(
                 padding:
                     const EdgeInsets.symmetric(vertical: 15, horizontal: 8),

@@ -107,9 +107,7 @@ class _DownHomeWidgetsState extends State<DownHomeWidgets> {
                                 ),
                                 onPressed: () {
                                   
-                                  focusStore.clearList();
-                                  print(focusStore.achieve);
-                                  // _cardStore.resetForm();
+                                  // focusStore.clearList();
                                 },
                                 child: const Icon(
                                   Icons.add,
